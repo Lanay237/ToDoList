@@ -1,0 +1,18 @@
+h1{
+  color: darkred;
+  background-color: #edfafa;
+  width: 250px;
+  padding: 5px;
+  margin: auto;
+  font-family: serif;
+  border-radius: 3px;
+  text-decoration-style: dashed;
+  text-align: center;
+  cursor: default;
+}
+
+.outside{
+  padding: 8px 6px;
+  margin: 0;
+  overflow: auto;
+}
