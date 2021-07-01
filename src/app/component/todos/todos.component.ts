@@ -14,7 +14,11 @@ export class TodosComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.todos = JSON.parse(localStorage.getItem('array'));
+    if (JSON.parse(localStorage.getItem('array')) == null){
+      this.todos = [];
+    }else {
+      this.todos = JSON.parse(localStorage.getItem('array'));
+    }
   }
 
   toggleDone(id: number): void {
